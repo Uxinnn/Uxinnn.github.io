@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed71459c.css",
+    "main.js": "/static/js/main.4e223f5e.js",
+    "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
+    "static/media/bumblebeePic.png": "/static/media/bumblebeePic.873f4eaa6d3f9ff606d2.png",
+    "static/media/dataSciCompPic.png": "/static/media/dataSciCompPic.aa4ec7a37035d5fcf251.png",
+    "static/media/dsoLogo.png": "/static/media/dsoLogo.eb0c8d15b88cc6df414b.png",
+    "static/media/dsoPic.png": "/static/media/dsoPic.eb0c8d15b88cc6df414b.png",
+    "static/media/profilePic.jpg": "/static/media/profilePic.9c47fbd7ec19377f54b7.jpg",
+    "static/media/parkWherePic.png": "/static/media/parkWherePic.13a0bac7d45ba57801f9.png",
+    "static/media/facebookCommentsPic.png": "/static/media/facebookCommentsPic.b45c2ffb5c8adeee99a1.png",
+    "static/media/parkwhereLogo.png": "/static/media/parkwhereLogo.6fb1197627e197c1294a.png",
+    "static/media/dataSciCompLogo.png": "/static/media/dataSciCompLogo.156e3b4614c20b46e58a.png",
+    "static/media/bumblebeeLogo.png": "/static/media/bumblebeeLogo.e4108e1aca172bcdfea9.png",
+    "static/media/facebookLogo.png": "/static/media/facebookLogo.71b6428a76694300287a.png",
+    "index.html": "/index.html",
+    "main.ed71459c.css.map": "/static/css/main.ed71459c.css.map",
+    "main.4e223f5e.js.map": "/static/js/main.4e223f5e.js.map",
+    "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed71459c.css",
+    "static/js/main.4e223f5e.js"
+  ]
+}
