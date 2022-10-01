@@ -1,26 +1,38 @@
 {
   "files": {
     "main.css": "/static/css/main.ed71459c.css",
-    "main.js": "/static/js/main.4e223f5e.js",
+    "main.js": "/static/js/main.dffca21d.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
     "static/media/bumblebeePic.png": "/static/media/bumblebeePic.873f4eaa6d3f9ff606d2.png",
+    "static/media/profilePic.jpg": "/static/media/profilePic.fa911bff1ab7ef6c5f43.jpg",
     "static/media/dataSciCompPic.png": "/static/media/dataSciCompPic.aa4ec7a37035d5fcf251.png",
+    "static/media/background.png": "/static/media/background.f9bd6bfde3b2f3aed594.png",
+    "static/media/bumblebeeLogo2.png": "/static/media/bumblebeeLogo2.ffefd09e011f61ba09ba.png",
     "static/media/dsoLogo.png": "/static/media/dsoLogo.eb0c8d15b88cc6df414b.png",
     "static/media/dsoPic.png": "/static/media/dsoPic.eb0c8d15b88cc6df414b.png",
-    "static/media/profilePic.jpg": "/static/media/profilePic.9c47fbd7ec19377f54b7.jpg",
+    "static/media/greyhatsLogo.png": "/static/media/greyhatsLogo.f86e41f47df51a7ed085.png",
+    "static/media/groupPic.jpg": "/static/media/groupPic.285f30c2091e54cc249b.jpg",
     "static/media/parkWherePic.png": "/static/media/parkWherePic.13a0bac7d45ba57801f9.png",
     "static/media/facebookCommentsPic.png": "/static/media/facebookCommentsPic.b45c2ffb5c8adeee99a1.png",
+    "static/media/escholarsLogo.jpg": "/static/media/escholarsLogo.b6f23c48020cbd253e88.jpg",
+    "static/media/footerBackground.png": "/static/media/footerBackground.4cb59d668eca899d6930.png",
+    "static/media/bumblebeeLogo.png": "/static/media/bumblebeeLogo.b8311ea1914e57f5bb2f.png",
     "static/media/parkwhereLogo.png": "/static/media/parkwhereLogo.6fb1197627e197c1294a.png",
     "static/media/dataSciCompLogo.png": "/static/media/dataSciCompLogo.156e3b4614c20b46e58a.png",
-    "static/media/bumblebeeLogo.png": "/static/media/bumblebeeLogo.e4108e1aca172bcdfea9.png",
+    "static/media/protoslabsLogo.png": "/static/media/protoslabsLogo.493a8ad033c2215c9f8c.png",
     "static/media/facebookLogo.png": "/static/media/facebookLogo.71b6428a76694300287a.png",
+    "static/media/cybersecurityIcon.svg": "/static/media/cybersecurityIcon.23e3da51de095d372638c78bd30fc19d.svg",
+    "static/media/programmingIcon.svg": "/static/media/programmingIcon.81e30e095e33bb2efb9c53dd3143d43a.svg",
+    "static/media/dataAnalyticsIcon.svg": "/static/media/dataAnalyticsIcon.a5714eb432dee8840c491a3fb873df60.svg",
+    "static/media/cloudIcon.svg": "/static/media/cloudIcon.9b5175f9ef5b1e334e8a550827d5400d.svg",
     "index.html": "/index.html",
+    "static/media/othersIcon.svg": "/static/media/othersIcon.1d9aed3d8e0fca442a18105cf30a2bda.svg",
     "main.ed71459c.css.map": "/static/css/main.ed71459c.css.map",
-    "main.4e223f5e.js.map": "/static/js/main.4e223f5e.js.map",
+    "main.dffca21d.js.map": "/static/js/main.dffca21d.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed71459c.css",
-    "static/js/main.4e223f5e.js"
+    "static/js/main.dffca21d.js"
   ]
 }
