@@ -1,51 +1,167 @@
 import React from 'react';
-import { Box, Grid, Typography, Card, IconButton, Stack } from '@mui/material';
+import { Box, Grid, Typography, Card, IconButton, Stack, Divider, Link } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FooterBackground from '../img/footerBackground.png';
+
 
 const Contact = props => {
     const tabId = props.tabId;
+    const linksData = props.linksData;
+
+    // Data here is used in the contacts card
+    const contactsData = [
+        {
+            description: 'xinyu.foong@gmail.com', 
+            ariaLabel: 'email', 
+            link: linksData.email, 
+            icon: <EmailIcon />
+        }, 
+        {
+            description: 'Uxinnn', 
+            ariaLabel: 'github', 
+            link: linksData.github, 
+            icon: <GitHubIcon />
+        }, 
+        {
+            description: 'foongxinyu', 
+            ariaLabel: 'linkedin', 
+            link: linksData.linkedin, 
+            icon: <LinkedInIcon />
+        }
+    ]
+
+    // Data here is used in the links at the footer of the portfolio
+    const footerLinksData = [
+        {
+            label: 'Resume', 
+            link: linksData.resume
+        }, 
+        {
+            label: 'CV', 
+            link: linksData.cv
+        }, 
+        {
+            label: 'Email', 
+            link: linksData.email
+        }, 
+        {
+            label: 'Github', 
+            link: linksData.github
+        }, 
+        {
+            label: 'LinkedIn', 
+            link: linksData.linkedin
+        }
+    ]
 
     return (
-        <Grid container id={tabId} justifyContent='center' alignItems='center' direction='column' minHeight='100vh' sx={{ paddingTop: '50px' }}>
-            <Card sx={{ width: '400px', minHeight: '300px', textAlign: 'center', borderRadius: '20px' }}>
-                <Grid container direction='column' minHeight='inherit' justifyContent='space-evenly' alignItems='center'>
-                    <Typography variant='h3'>Contact Me</Typography>
-                    <Stack direction='column' justifyContent='left'>
-                        <Box display='flex' alignItems='center'>
-                            <IconButton color="primary" aria-label="email" href={`mailto:xinyu.foong@gmail.com`}>
-                                <EmailIcon />
-                            </IconButton>
-                            <Typography>xinyu.foong@gmail.com</Typography>
-                        </Box>
-                        <Box display='flex' alignItems='center'>
-                            <IconButton color="primary" aria-label="github" target="_blank" href={`https://github.com/Uxinnn`}>
-                                <GitHubIcon fontSize="inherit" />
-                            </IconButton>
-                            <Typography>Uxinnn</Typography>
-                        </Box>
-                        <Box display='flex' alignItems='center'>
-                            <IconButton color="primary" aria-label="linkedin" target="_blank" href={`https://www.linkedin.com/in/foongxinyu/`}>
-                                <LinkedInIcon fontSize="inherit" />
-                            </IconButton>
-                            <Typography>foongxinyu</Typography>
-                        </Box>
-                    </Stack>
-                    {/* <Box display='flex' justifyContent='space-around' alignItems='center'>
-                        <IconButton color="primary" aria-label="email" href={`mailto:xinyu.foong@gmail.com`}>
-                            <EmailIcon />
-                        </IconButton>
-                        <IconButton color="primary" aria-label="github" size='large' target="_blank" href={`https://github.com/Uxinnn`}>
-                            <GitHubIcon fontSize="inherit" />
-                        </IconButton>
-                        <IconButton color="primary" aria-label="linkedin" size='large' target="_blank" href={`https://www.linkedin.com/in/foongxinyu/`}>
-                            <LinkedInIcon fontSize="inherit" />
-                        </IconButton>
-                    </Box> */}
-                </Grid>
-            </Card>
-        </Grid >
+        <React.Fragment>
+            <Grid 
+                container 
+                id={tabId} 
+                justifyContent='flex-end' 
+                alignItems='center' 
+                direction='column' 
+                minHeight='100vh' 
+                minWidth='103.9%' 
+                overflow='hidden' 
+                sx={{ 
+                    paddingTop: '50px', 
+                    backgroundImage: `url(${FooterBackground})`, 
+                    backgroundSize: 'contain', 
+                    backgroundPosition: 'center bottom', 
+                    backgroundRepeat: 'no-repeat' 
+                }}
+            >
+                <Card 
+                    sx={{ 
+                        width: '400px', 
+                        minHeight: '300px', 
+                        textAlign: 'center', 
+                        borderRadius: '20px' 
+                    }}
+                >
+                    <Grid 
+                        container 
+                        direction='column' 
+                        minHeight='inherit' 
+                        justifyContent='space-evenly' 
+                        alignItems='center'
+                    >
+                        <Typography 
+                            variant='h3' 
+                            fontWeight='bold'
+                        >
+                            Contacts
+                        </Typography>
+                        <Typography 
+                            variant='subtitle1' 
+                            fontStyle='italic' 
+                            paddingLeft='10%' 
+                            paddingRight='10%'
+                        >
+                            Do reach out if you would like to connect!
+                        </Typography>
+                        <Stack 
+                            direction='column' 
+                            justifyContent='left'
+                        >
+                            {contactsData.map(
+                                contactData => (
+                                    <Box 
+                                        display='flex' 
+                                        alignItems='center'
+                                    >
+                                        <IconButton 
+                                            color="primary" 
+                                            aria-label={contactData.ariaLabel}
+                                            href={contactData.link}
+                                        >
+                                            {contactData.icon}
+                                        </IconButton>
+                                        <Typography>
+                                            {contactData.description}
+                                        </Typography>
+                                    </Box>
+                                )
+                            )}
+                        </Stack>
+                    </Grid>
+                </Card>
+                {/* Footer */}
+                <Stack 
+                    direction="row" 
+                    mt={8}
+                    divider={
+                        <Divider orientation="vertical" flexItem />
+                    } 
+                    spacing={2}
+                    >
+                    {footerLinksData.map(
+                        footerLink => (
+                            <Link 
+                                href={footerLink.link} 
+                                color="secondary" 
+                                underline="hover" 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                {footerLink.label}
+                            </Link>
+                        )
+                    )}
+                </Stack>
+                <Typography 
+                    color='secondary' 
+                    marginBottom={{xs: '1%', md: '2%'}} 
+                    marginTop='2%'
+                >
+                    Foong Xin Yu
+                </Typography>
+            </Grid >
+        </React.Fragment>
     )
 }
 

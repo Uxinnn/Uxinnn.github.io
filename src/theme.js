@@ -1,15 +1,25 @@
 import { createTheme } from "@mui/material/styles";
-import { grey, blue } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: blue[500],
+      main: '#498EA7',
     },
     secondary: {
-      main: grey[500],
+      main: '#DEEBF7',
     },
+    text: {
+      primary: grey[800], 
+    }, 
+    divider: '#DEEBF7', 
+    background: {
+      paper: '#DEEBF7'
+    }
   },
+  typography: {
+    fontFamily: "Roboto Mono"
+  }
 });
 
 export default theme
