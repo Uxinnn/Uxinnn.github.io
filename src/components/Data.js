@@ -48,7 +48,7 @@ const data = {
     ], 
     linksData: {
         resume: 'https://drive.google.com/file/d/1h6Bv74Fimp5ZOgrtJDy-9KQYlUO-SpmM/view?usp=sharing', 
-        cv: 'https://drive.google.com/file/d/1zldl0KzDIbvDNKRGbCfodjYq4mMD0BTv/view?usp=sharing', 
+        cv: 'https://drive.google.com/file/d/1qgkig9AXgHBoQgg09Qor9OvmATYYoPg_/view?usp=sharing', 
         email: 'mailto:xinyu.foong@gmail.com', 
         github: 'https://github.com/Uxinnn', 
         linkedin: 'https://www.linkedin.com/in/foongxinyu/', 
