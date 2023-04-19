@@ -15,6 +15,8 @@ import OrcatechLogo from '../img/orcatech/orcatechLogo.jpg'
 import GreyhatsLogo from '../img/greyhats/greyhatsLogo.png'
 import EScholarsLogo from '../img/escholars/escholarsLogo.jpg'
 import Rc4Logo from '../img/rc4/rc4Logo.jpg'
+import AwsCcpLogo from '../img/aws_ccp.png'
+import GccLogo from '../img/gcc.png'
 
 // Skill Icons
 import ProgrammingIcon from '../img/skillsIcons/programmingIcon.svg'
@@ -47,8 +49,8 @@ const data = {
         }
     ], 
     linksData: {
-        resume: 'https://drive.google.com/file/d/1h6Bv74Fimp5ZOgrtJDy-9KQYlUO-SpmM/view?usp=sharing', 
-        cv: 'https://drive.google.com/file/d/1qgkig9AXgHBoQgg09Qor9OvmATYYoPg_/view?usp=sharing', 
+        resume: 'https://drive.google.com/file/d/1Qio2HZLiBX5HVPN0vDPqaTnGdyx5MkoK/view?usp=sharing', 
+        cv: 'https://drive.google.com/file/d/1NXa04td5R0PDAZ_AZ0C9myD1QxojWgsQ/view?usp=sharing', 
         email: 'mailto:xinyu.foong@gmail.com', 
         github: 'https://github.com/Uxinnn', 
         linkedin: 'https://www.linkedin.com/in/foongxinyu/', 
@@ -81,6 +83,12 @@ const data = {
         },
     ],
     workExperienceData: [
+        {
+            job: 'Data Science Intern', 
+            org: 'Protoslabs', 
+            duration: 'Jan 2023 - Apr 2023', 
+            description: "Developed Protoslab's Cyber Risk Quantification methodology and infrastructure. (Part time)"
+        }, 
         {
             job: 'Software Engineer', 
             org: 'Protoslabs', 
@@ -128,6 +136,18 @@ const data = {
     ], 
     extraCurricularsData: [
         {
+            title: 'Global Cybersecurity Camp - Participant', 
+            duration: 'Feb 2023', 
+            pic: GccLogo, 
+            description: 'Spent a week interacting with fellow cybersecurity students from the APAC region and learning from the region\'s best cybersecurity professionals. The topics covered, such as Powershell Malware Detection and Web Tracking, were extremely insightful and fun. Very grateful to the friends I made and Div0 for organising this event!'
+        }, 
+        {
+            title: 'AWS Certified Cloud Practitioner', 
+            duration: 'Nov 2022', 
+            pic: AwsCcpLogo, 
+            description: 'Learnt the foundations of AWS cloud.'
+        }, 
+        {
             title: 'OrcaCode - Cofounder', 
             duration: 'Aug 2021 - Dec 2021', 
             pic: Rc4Logo, 
@@ -167,10 +187,10 @@ const data = {
     projectsData: [
         {
             title: 'Software Engineer', 
-            subtitle: 'Protoslabs 2022', 
+            subtitle: 'Protoslabs 2022, 2023', 
             thumbnail: ProtoslabsLogo,
             pic: ProtoslabsGroupPic, 
-            description: "I started out as an intern at Protoslabs from January to June, before transitioning to a proper Software Engineer role from July to August. <br/>My main responsilibity was developing new functionalities, APIs, and data connectors for the backend of Protoslabs' flagship Cyber Risk Intelligence platform, Nexus. I also provisioned and managed the AWS resources used by Nexus and an internal application, automating the whole process with Terraform. Additionally, I helped to process and analyze cyber loss data too. <br/>My experience at Protoslabs has definitely enabled me to grow not just technically, but also as an effective team member. Furthermore, interacting with the founders of Protoslabs, who were previously Booz Allen cyber consultants, has given me many deep insights into the cybersecurity industry.", 
+            description: "I started out as an intern at Protoslabs from January to June 2022, before transitioning to a proper Software Engineer role from July to August. <br/>My main responsilibity was developing new functionalities, APIs, and data connectors for the backend of Protoslabs' flagship Cyber Risk Intelligence platform, Nexus. I also provisioned and managed the AWS resources used by Nexus and an internal application, automating the whole process with Terraform. Additionally, I helped to process and analyze cyber loss data too. <br/>My experience at Protoslabs has definitely enabled me to grow not just technically, but also as an effective team member. Furthermore, interacting with the founders of Protoslabs, who were previously Booz Allen cyber consultants, has given me many deep insights into the cybersecurity industry. <br/> I returned as a part-time data science intern from January to April 2023, with a focus on developing the company's Cyber Risk Quantification methodology and backend infrastructure.", 
             link: '', 
             techUsed: ['Python', 'Serverless Framework', 'Postgresql', 'AWS', 'Terraform', 'Pandas', 'Numpy']
         }, 
