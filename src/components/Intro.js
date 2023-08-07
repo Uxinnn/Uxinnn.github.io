@@ -67,7 +67,7 @@ const Intro = props => {
                             Foong Xin Yu
                         </Typography>
                         <Typography>
-                            I am a final year student at the National University of Singapore pursuing a Bachelor's in Computer Engineering under the Engineering Scholars Programme.
+                            I am a student at the National University of Singapore (NUS) pursuing a Master of Science in Data Science and Machine Learning. Prior to this, I completed my Bachelor's in Computer Engineering under the Engineering Scholars Programme at NUS too, graduating with a First Class Honours.
                             Thank you for taking the time to look around this portfolio website of mine :)
                         </Typography>
                         <br/>

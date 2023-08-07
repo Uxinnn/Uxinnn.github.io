@@ -49,8 +49,8 @@ const data = {
         }
     ], 
     linksData: {
-        resume: 'https://drive.google.com/file/d/1Qio2HZLiBX5HVPN0vDPqaTnGdyx5MkoK/view?usp=sharing', 
-        cv: 'https://drive.google.com/file/d/1NXa04td5R0PDAZ_AZ0C9myD1QxojWgsQ/view?usp=sharing', 
+        resume: 'https://drive.google.com/file/d/1hqseSKc5sAQc5-1z86-B4E5NtgVnyh3l/view?usp=sharing', 
+        cv: 'https://drive.google.com/file/d/1V_KnUKTomNqUOQA-BLeS92u_9TC0_Wqv/view?usp=sharing', 
         email: 'mailto:xinyu.foong@gmail.com', 
         github: 'https://github.com/Uxinnn', 
         linkedin: 'https://www.linkedin.com/in/foongxinyu/', 
