@@ -66,7 +66,7 @@ const data = {
         {
             category: 'Data Science', 
             icon: AnalyticsIcon, 
-            items: ['Elasticsearch', 'Logstash', 'Kibana', 'Beats', 'Tableau', 'Pandas', 'NumPy', 'Scikit-learn', 'PyTorch', 'OpenCV']
+            items: ['Elasticsearch', 'Logstash', 'Kibana', 'Beats', 'Tableau', 'Pandas', 'NumPy', 'Scikit-learn', 'PyTorch', 'OpenCV', 'OpenAI Gymnasium', 'Spark', 'Hadoop']
         },
         {
             category: 'Cloud Computing', 
