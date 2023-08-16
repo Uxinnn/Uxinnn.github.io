@@ -17,6 +17,8 @@ import EScholarsLogo from '../img/escholars/escholarsLogo.jpg'
 import Rc4Logo from '../img/rc4/rc4Logo.jpg'
 import AwsCcpLogo from '../img/aws_ccp.png'
 import GccLogo from '../img/gcc.png'
+import CapstoneLogo from '../img/capstone/capstoneLogo.png'
+import CapstonePic from '../img/capstone/capstonePic.png'
 
 // Skill Icons
 import ProgrammingIcon from '../img/skillsIcons/programmingIcon.svg'
@@ -84,7 +86,7 @@ const data = {
     ],
     workExperienceData: [
         {
-            job: 'Data Science Intern', 
+            job: 'Software Engineer', 
             org: 'Protoslabs', 
             duration: 'Jan 2023 - Apr 2023', 
             description: "Developed Protoslab's Cyber Risk Quantification methodology and infrastructure. (Part time)"
@@ -185,6 +187,15 @@ const data = {
         },
     ], 
     projectsData: [
+        {
+            title: 'LaserTag++', 
+            subtitle: 'Computer Engineering Capstone', 
+            thumbnail: CapstoneLogo, 
+            pic: CapstonePic, 
+            description: 'This project is done as part of my Computer Engineering Capstone module, CG4002. The aim was to create a Laser Tag game system in a team of 5 students. I was responsible for ensuring that communications between components, such as wearable sensors and the game engine, are smooth and efficient. I was also in charge of designing the game system and logic. I was fortunate to have a dedicated project group that worked extremely hard together and more importantly, had fun together (Although I would not miss the 4am debugging sessions in school). We managed to clinch an A+ grade and were invited back as Teaching Assistants for the module. In addition, I was given the top student award for the module!', 
+            link: 'https://credentials.nus.edu.sg/86d92f11-1d46-4475-92d0-8c5932f741ba', 
+            techUsed: ['Python', 'Multithreading', 'Unity', 'MQTT']
+        }, 
         {
             title: 'Software Engineer', 
             subtitle: 'Protoslabs 2022, 2023', 
