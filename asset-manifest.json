@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ed71459c.css",
-    "main.js": "/static/js/main.ce46f2a0.js",
+    "main.js": "/static/js/main.3d75e51b.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
     "static/media/bumblebeePic.png": "/static/media/bumblebeePic.873f4eaa6d3f9ff606d2.png",
     "static/media/profilePic.jpg": "/static/media/profilePic.fa911bff1ab7ef6c5f43.jpg",
@@ -12,6 +12,8 @@
     "static/media/dsoPic.png": "/static/media/dsoPic.eb0c8d15b88cc6df414b.png",
     "static/media/greyhatsLogo.png": "/static/media/greyhatsLogo.f86e41f47df51a7ed085.png",
     "static/media/groupPic.jpg": "/static/media/groupPic.285f30c2091e54cc249b.jpg",
+    "static/media/capstonePic.png": "/static/media/capstonePic.6da1b33c02abe79029a0.png",
+    "static/media/capstoneLogo.png": "/static/media/capstoneLogo.cf88c80c03f1e809f05d.png",
     "static/media/parkWherePic.png": "/static/media/parkWherePic.13a0bac7d45ba57801f9.png",
     "static/media/facebookCommentsPic.png": "/static/media/facebookCommentsPic.b45c2ffb5c8adeee99a1.png",
     "static/media/escholarsLogo.jpg": "/static/media/escholarsLogo.b6f23c48020cbd253e88.jpg",
@@ -30,11 +32,11 @@
     "index.html": "/index.html",
     "static/media/othersIcon.svg": "/static/media/othersIcon.1d9aed3d8e0fca442a18105cf30a2bda.svg",
     "main.ed71459c.css.map": "/static/css/main.ed71459c.css.map",
-    "main.ce46f2a0.js.map": "/static/js/main.ce46f2a0.js.map",
+    "main.3d75e51b.js.map": "/static/js/main.3d75e51b.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed71459c.css",
-    "static/js/main.ce46f2a0.js"
+    "static/js/main.3d75e51b.js"
   ]
 }
