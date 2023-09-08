@@ -39,10 +39,6 @@ const Contact = props => {
             link: linksData.resume
         }, 
         {
-            label: 'CV', 
-            link: linksData.cv
-        }, 
-        {
             label: 'Email', 
             link: linksData.email
         }, 

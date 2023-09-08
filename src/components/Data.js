@@ -19,6 +19,7 @@ import AwsCcpLogo from '../img/aws_ccp.png'
 import GccLogo from '../img/gcc.png'
 import CapstoneLogo from '../img/capstone/capstoneLogo.png'
 import CapstonePic from '../img/capstone/capstonePic.png'
+import GcpAceLogo from '../img/gcp_ace.png'
 
 // Skill Icons
 import ProgrammingIcon from '../img/skillsIcons/programmingIcon.svg'
@@ -51,8 +52,7 @@ const data = {
         }
     ], 
     linksData: {
-        resume: 'https://drive.google.com/file/d/1hqseSKc5sAQc5-1z86-B4E5NtgVnyh3l/view?usp=sharing', 
-        cv: 'https://drive.google.com/file/d/1V_KnUKTomNqUOQA-BLeS92u_9TC0_Wqv/view?usp=sharing', 
+        resume: 'https://drive.google.com/file/d/1KzdFmr6JievBB3X4kkEeubmz2m-zPJQV/view?usp=sharing', 
         email: 'mailto:xinyu.foong@gmail.com', 
         github: 'https://github.com/Uxinnn', 
         linkedin: 'https://www.linkedin.com/in/foongxinyu/', 
@@ -85,6 +85,12 @@ const data = {
         },
     ],
     workExperienceData: [
+        {
+            job: 'Teaching Assistant', 
+            org: 'NUS', 
+            duration: 'Aug 2023 - Present', 
+            description: "Advised students on multithreaded communications and system logic and design for their Computer Engineering Capstone Project."
+        }, 
         {
             job: 'Software Engineer', 
             org: 'Protoslabs', 
@@ -124,7 +130,13 @@ const data = {
     ], 
     testimonialsData: [
         {
-            supervisor: 'Teo Hong Siang', 
+            supervisor: 'Dr Soh Wee Seng', 
+            position: 'Associate Professor', 
+            company: 'National University of Singapore', 
+            quote: 'Xin Yu possesses a warm and friendly personality that enables him to gel well with other students.'
+        }, 
+        {
+            supervisor: 'Dr Teo Hong Siang', 
             position: 'Principal Member of Technical Staff', 
             company: 'DSO National Laboratories', 
             quote: '...right off the bat, he showed his passion for learning and a hunger for discovery. We had no hesitation taking him in.'
@@ -150,16 +162,16 @@ const data = {
             description: 'Learnt the foundations of AWS cloud.'
         }, 
         {
+            title: 'NUS Greyhats - Member', 
+            duration: 'Jan 2022 - Jul 2023', 
+            pic: GreyhatsLogo, 
+            description: 'Greyhats is an NUS wide cybersecurity interest group. Our activities mainly revolve around participating in Capture-The-Flag (CTF) competitions and organizing talks and activities to interact with cybersecurity professionals in the industry.'
+        }, 
+        {
             title: 'OrcaCode - Cofounder', 
             duration: 'Aug 2021 - Dec 2021', 
             pic: Rc4Logo, 
-            description: 'OrcaCode is a Leetcode/programming interest group that I co-founded during my stay at my residential college, Residential College 4. OrcaCode was founded to not only bring together residents who have an interest in programming, but also function as an avenue where we could help each other improve on our programming skills. In the first 3 months of creating OrcaCode, the interest group had grown to have on average 10 weekly attendees.'
-        }, 
-        {
-            title: 'NUS Greyhats - Member', 
-            duration: 'Jan 2022 - Present', 
-            pic: GreyhatsLogo, 
-            description: 'Greyhats is an NUS wide cybersecurity interest group. Our activities mainly revolve around participating in Capture-The-Flag (CTF) competitions and organizing talks and activities to interact with cybersecurity professionals in the industry.'
+            description: 'OrcaCode is a Leetcode/programming interest group that I co-founded during my stay at my residential college, Residential College 4. OrcaCode was founded to not only bring together residents who have an interest in programming, but also function as an avenue where we could help each other improve on our programming skills. In the first 3 months of creating OrcaCode, the interest group had grown to have on average 7 weekly attendees.'
         }, 
         {
             title: 'OrcaTech - Events Director', 
@@ -167,6 +179,12 @@ const data = {
             pic: OrcatechLogo, 
             description: 'OrcaTech is a technology interest group in my residential college, Residential College 4. The focus of OrcaTech is to not only bring technology enthusiasts together, but to spread this interest in technology to the wider college community. My role as Events Director revolves around organizing technology-related events for the college, such as an intro to programming workshop and an intro to arduino workshop.'
         },
+        {
+            title: 'GCP - Associate Cloud Engineer', 
+            duration: 'Jan 2021', 
+            pic: GcpAceLogo, 
+            description: 'Learnt the basics of Google Cloud Platform. (Certification has expired on Jan 2023)'
+        }, 
         {
             title: 'Bumblebee - Optical Flow junior sub-team leader', 
             duration: 'Aug 2020 - May 2021', 
@@ -201,7 +219,7 @@ const data = {
             subtitle: 'Protoslabs 2022, 2023', 
             thumbnail: ProtoslabsLogo,
             pic: ProtoslabsGroupPic, 
-            description: "I started out as an intern at Protoslabs from January to June 2022, before transitioning to a proper Software Engineer role from July to August. <br/>My main responsilibity was developing new functionalities, APIs, and data connectors for the backend of Protoslabs' flagship Cyber Risk Intelligence platform, Nexus. I also provisioned and managed the AWS resources used by Nexus and an internal application, automating the whole process with Terraform. Additionally, I helped to process and analyze cyber loss data too. <br/>My experience at Protoslabs has definitely enabled me to grow not just technically, but also as an effective team member. Furthermore, interacting with the founders of Protoslabs, who were previously Booz Allen cyber consultants, has given me many deep insights into the cybersecurity industry. <br/> I returned as a part-time data science intern from January to April 2023, with a focus on developing the company's Cyber Risk Quantification methodology and backend infrastructure.", 
+            description: "I started out as an intern at Protoslabs from January to June 2022, before transitioning to a proper Software Engineer role from July to August. <br/>My main responsilibity was developing new functionalities, APIs, and data connectors for the backend of Protoslabs' flagship Cyber Risk Intelligence platform, Nexus. I also provisioned and managed the AWS resources used by Nexus and an internal application, automating the whole process with Terraform. Additionally, I helped to process and analyze cyber loss data too. <br/>My experience at Protoslabs has definitely enabled me to grow not just technically, but also as an effective team member. Furthermore, interacting with the founders of Protoslabs, who were previously Booz Allen cyber consultants, has given me many deep insights into the cybersecurity industry. <br/> I returned as a part-timer from January to April 2023, with a focus on developing the company's Cyber Risk Quantification methodology and backend infrastructure.", 
             link: '', 
             techUsed: ['Python', 'Serverless Framework', 'Postgresql', 'AWS', 'Terraform', 'Pandas', 'Numpy']
         }, 

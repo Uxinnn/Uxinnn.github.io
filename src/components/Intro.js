@@ -88,14 +88,6 @@ const Intro = props => {
                             >
                                 Resume
                             </Button>
-                            <Button 
-                                variant='contained' 
-                                href={linksData.cv} 
-                                target='_blank' 
-                                color='secondary'
-                            >
-                                CV
-                            </Button>
                         </Box>
                     </Box>
                 </Grid>
