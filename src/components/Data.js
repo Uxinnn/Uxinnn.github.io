@@ -274,7 +274,7 @@ const data = {
             thumbnail: FacebookLogo,
             pic: FacebookCommentsPic,
             description: 'This project uses machine learning to predict the number of comments a Facebook post will get and could potentially help Facebook content creators to improve their viewership numbers. The project uses the publicly available Facebook comments dataset on the UCI Machine Learning Repository and implemented a unique approach to solve the problem statement as the data was heavily skewed to the right (Due to most Facebook posts having 0 comments). It was done as part of the NUS module CS3244, Machine Learning, and scored a total of 96.8/100. The median score for the projects was 87.6.', 
-            link: 'https://colab.research.google.com/drive/1MCpLMABnPq8JVjcynBtSa2SEDAgLuCQg?usp=sharing', 
+            link: 'https://www.youtube.com/watch?v=3DI8-3pGNQE', 
             techUsed: ['Python', 'Scikit-learn', 'Pandas', 'Numpy']
         },
     ]
