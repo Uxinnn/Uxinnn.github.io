@@ -1,0 +1,60 @@
+baseurl = "uxinnn.github.io"
+title = "Foong Xin Yu"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+
+[pagination]
+pagerSize = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  author = "Foong Xin Yu"
+  info = ["Cybersecurity + Analytics", "*I, a universe of atoms, an atom in the universe*"]
+  description = "Xin Yu's personal website"
+  keywords = "blog,developer,cybersecurity,analytics"
+  avatarurl = "images/chicken.jpg"
+
+  faviconSVG = "images/chicken.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/Uxinnn"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://linkedin.com/in/foongxinyu/"
+
+# Menu links
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+[[menu.main]]
+  name = "Blog"
+  weight = 2
+  url  = "posts/"
