@@ -6,6 +6,42 @@
     <description>Recent content in Tags on Foong Xin Yu</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 27 Apr 2026 16:12:42 +0800</lastBuildDate>
     <atom:link href="uxinnn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ghidra</title>
+      <link>uxinnn.github.io/tags/ghidra/</link>
+      <pubDate>Mon, 27 Apr 2026 16:12:42 +0800</pubDate>
+      <guid>uxinnn.github.io/tags/ghidra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intellij</title>
+      <link>uxinnn.github.io/tags/intellij/</link>
+      <pubDate>Mon, 27 Apr 2026 16:12:42 +0800</pubDate>
+      <guid>uxinnn.github.io/tags/intellij/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Development</title>
+      <link>uxinnn.github.io/tags/software-development/</link>
+      <pubDate>Mon, 27 Apr 2026 16:12:42 +0800</pubDate>
+      <guid>uxinnn.github.io/tags/software-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pcode</title>
+      <link>uxinnn.github.io/tags/pcode/</link>
+      <pubDate>Sat, 18 Apr 2026 22:31:18 +0800</pubDate>
+      <guid>uxinnn.github.io/tags/pcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Static Analysis</title>
+      <link>uxinnn.github.io/tags/static-analysis/</link>
+      <pubDate>Sat, 18 Apr 2026 22:31:18 +0800</pubDate>
+      <guid>uxinnn.github.io/tags/static-analysis/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intellij on Foong Xin Yu</title>
+    <link>uxinnn.github.io/tags/intellij/</link>
+    <description>Recent content in Intellij on Foong Xin Yu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Apr 2026 16:12:42 +0800</lastBuildDate>
+    <atom:link href="uxinnn.github.io/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ghidra x IntelliJ: A Plugin Glow-Up</title>
+      <link>uxinnn.github.io/posts/ghidra-x-intellij-a-plugin-glowup/</link>
+      <pubDate>Mon, 27 Apr 2026 16:12:42 +0800</pubDate>
+      <guid>uxinnn.github.io/posts/ghidra-x-intellij-a-plugin-glowup/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xD;&#xA;  Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;When I first started learning programming, the first proper IDE that I ever used was PyCharm. Since then, I became a sucker for JetBrains IDEs and have stuck to them as much as possible when developing software. As such, it was to my horror when I started exploring Ghidra scripting that full dev support was only provided for Eclipse via the GhidraDev plugin bundled together with Ghidra (Does anyone even use Eclipse…?). VSCode is also given some love via the “Create VSCode Module Project” option in Ghidra. However, IntelliJ has been left out completely. Considering that IntelliJ is the one of the most widely used IDE for Java development, I was quite surprised that the only available support for Ghidra development with IntelliJ was a &lt;a href=&#34;https://plugins.jetbrains.com/plugin/18086-ghidra&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;broken 3rd party plugin&lt;/a&gt; in the IntelliJ plugin marketplace that was last updated in 2024. There was &lt;a href=&#34;https://github.com/R3TRO04/intellij-ghidra&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;some effort&lt;/a&gt; by others to fix the plugin. However, it was still missing some crucial features that I wanted. Being a diehard JetBrains fan, I thus decided to fix the Ghidra IntelliJ plugin and give it a boost.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

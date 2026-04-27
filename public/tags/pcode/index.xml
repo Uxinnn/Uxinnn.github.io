@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pcode on Foong Xin Yu</title>
-    <link>//localhost:1313/tags/pcode/</link>
+    <link>uxinnn.github.io/tags/pcode/</link>
     <description>Recent content in Pcode on Foong Xin Yu</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Apr 2026 22:31:18 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/pcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Apr 2026 22:31:18 +0800</lastBuildDate>
+    <atom:link href="uxinnn.github.io/tags/pcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Gentle Introduction to Static Analysis with Ghidra Pcode</title>
-      <link>//localhost:1313/posts/a-gentle-introduction-to-static-analysis-with-ghidra-pcode/</link>
-      <pubDate>Thu, 09 Apr 2026 22:31:18 +0800</pubDate>
-      <guid>//localhost:1313/posts/a-gentle-introduction-to-static-analysis-with-ghidra-pcode/</guid>
+      <link>uxinnn.github.io/posts/a-gentle-introduction-to-static-analysis-with-ghidra-pcode/</link>
+      <pubDate>Sat, 18 Apr 2026 22:31:18 +0800</pubDate>
+      <guid>uxinnn.github.io/posts/a-gentle-introduction-to-static-analysis-with-ghidra-pcode/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Ghidra x IntelliJ: A Plugin Glow-Up · Foong Xin Yu
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Foong Xin Yu">
+<meta name="description" content="An article on how I improved the Ghidra IntelliJ Plugin">
+<meta name="keywords" content="blog,developer,cybersecurity,analytics">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ghidra x IntelliJ: A Plugin Glow-Up">
+  <meta name="twitter:description" content="An article on how I improved the Ghidra IntelliJ Plugin">
+
+<meta property="og:url" content="uxinnn.github.io/posts/ghidra-x-intellij-a-plugin-glowup/">
+  <meta property="og:site_name" content="Foong Xin Yu">
+  <meta property="og:title" content="Ghidra x IntelliJ: A Plugin Glow-Up">
+  <meta property="og:description" content="An article on how I improved the Ghidra IntelliJ Plugin">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-27T16:12:42+08:00">
+    <meta property="article:modified_time" content="2026-04-27T16:12:42+08:00">
+    <meta property="article:tag" content="Software Development">
+    <meta property="article:tag" content="Ghidra">
+    <meta property="article:tag" content="Intellij">
+
+
+
+
+<link rel="canonical" href="uxinnn.github.io/posts/ghidra-x-intellij-a-plugin-glowup/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="uxinnn.github.io/css/coder.min.f6b1b35a7b02521b25338f6cf58975f9980a6c12847763fe35a48307758cd1e7.css" integrity="sha256-9rGzWnsCUhslM49s9Yl1&#43;ZgKbBKEd2P&#43;NaSDB3WM0ec=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="uxinnn.github.io/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/uxinnn.github.io/images/chicken.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="uxinnn.github.io/">
+      Foong Xin Yu
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/uxinnn.github.io/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/uxinnn.github.io/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="uxinnn.github.io/posts/ghidra-x-intellij-a-plugin-glowup/">
+              Ghidra x IntelliJ: A Plugin Glow-Up
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-04-27T16:12:42&#43;08:00">
+                April 27, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="uxinnn.github.io/authors/uxinnn/">Uxinnn</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="uxinnn.github.io/categories/software-development/">Software Development</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="uxinnn.github.io/tags/software-development/">Software Development</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="uxinnn.github.io/tags/ghidra/">Ghidra</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="uxinnn.github.io/tags/intellij/">Intellij</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      
+
+
+      <div class="post-content">
+        
+          <img src="/uxinnn.github.io/images/intellij-ghidra.png" alt="Featured image"/>
+        
+        <h1 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>When I first started learning programming, the first proper IDE that I ever used was PyCharm. Since then, I became a sucker for JetBrains IDEs and have stuck to them as much as possible when developing software. As such, it was to my horror when I started exploring Ghidra scripting that full dev support was only provided for Eclipse via the GhidraDev plugin bundled together with Ghidra (Does anyone even use Eclipse…?). VSCode is also given some love via the “Create VSCode Module Project” option in Ghidra. However, IntelliJ has been left out completely. Considering that IntelliJ is the one of the most widely used IDE for Java development, I was quite surprised that the only available support for Ghidra development with IntelliJ was a <a href="https://plugins.jetbrains.com/plugin/18086-ghidra"  class="external-link" target="_blank" rel="noopener">broken 3rd party plugin</a> in the IntelliJ plugin marketplace that was last updated in 2024. There was <a href="https://github.com/R3TRO04/intellij-ghidra"  class="external-link" target="_blank" rel="noopener">some effort</a> by others to fix the plugin. However, it was still missing some crucial features that I wanted. Being a diehard JetBrains fan, I thus decided to fix the Ghidra IntelliJ plugin and give it a boost.</p>
+<p>If there is too much text here and you just want to check out the plugin, here it is: <a href="https://github.com/Uxinnn/intellij-ghidra"  class="external-link" target="_blank" rel="noopener">https://github.com/Uxinnn/intellij-ghidra</a></p>
+<h1 id="evaluating-the-original-intellij-ghidra-plugin">
+  Evaluating the original IntelliJ Ghidra Plugin
+  <a class="heading-link" href="#evaluating-the-original-intellij-ghidra-plugin">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>To start, I first did a quick fix of the original IntelliJ Ghidra Plugin so that I can check out its usefulness. I then made the painful decision to install Eclipse and play with it a little to understand GhidraDev’s features and capabilities. I also checked out the VSCode skeleton project that is provided by Ghidra. Below is a comparison of features between these 3 different methods for Ghidra script/module development.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Original IntelliJ Ghidra Plugin</th>
+          <th>Eclipse GhidraDev</th>
+          <th>VSCode Ghidra Module Project</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Supports Ghidra Script and Module Projects?</td>
+          <td>Only scripts</td>
+          <td>Both scripts and modules</td>
+          <td>Only modules</td>
+      </tr>
+      <tr>
+          <td>Able to create new Ghidra projects from IDE?</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Able to load existing Ghidra projects?</td>
+          <td>Sort of</td>
+          <td>Yes</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Able to start Ghidra with the current Module without installation?</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="features">
+  Features
+  <a class="heading-link" href="#features">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>From here, I was able to create a few requirements that I want my plugin to fulfill.</p>
+<table>
+  <thead>
+      <tr>
+          <th>S/N</th>
+          <th>Requirement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>A user should be able to create new projects directly from IntelliJ, so that the user will not need to create skeleton directories and files manually.</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>The plugin should support both Ghidra Modules and Ghidra Scripts projects.</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>The plugin should provide functional Intellisense support (autocomplete for Ghidra APIs, import resolution from <code>src</code>), to allow for better development experience.</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>A user should be able to (as much as possible) import existing projects into IntelliJ without any modifications to the project.</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>A user should be able to launch Ghidra from IntelliJ, with the current module attached to it, so that debugging the code can be done easily.</td>
+      </tr>
+  </tbody>
+</table>
+<p>These requirements were distilled into the following main features:</p>
+<ol>
+<li><strong>Persistent Settings Storage</strong>
+<ul>
+<li>Stores and validates the Ghidra related settings across sessions.</li>
+</ul>
+</li>
+<li><strong>Gradle/IntelliJ build system Integration</strong>
+<ul>
+<li>Provides Intellisense by configuring the build system.</li>
+</ul>
+</li>
+<li><strong>Run configuration</strong>
+<ul>
+<li>Enables launching Ghidra from IntelliJ with the current module attached.</li>
+</ul>
+</li>
+<li><strong>New Project Wizard</strong>
+<ul>
+<li>Allow users to create new Ghidra module/script projects directly from IntelliJ.</li>
+</ul>
+</li>
+</ol>
+<p>These components are not independent. The New Project Wizard takes in Ghidra settings from the user when a new project is created and passes these values to the persistent storage. From here, the build system and run configuration functions by querying the storage for setting values.</p>
+<p>Building the plugin involved learning the IntelliJ Plugin SDK (which is quite introductory in its documentation), picking up Kotlin from scratch, and a fair amount of grepping through the JetBrains and Ghidra GitHub repositories until things made sense. The JetBrains forums and Claude were also helpful along the way.</p>
+<p>Throughout this plugin development, my main consideration was on the ease of use, especially when it came to importing existing Ghidra module/script projects into IntelliJ. If it is troublesome for a user to shift to using IntelliJ, then I have no chance in attracting users away from Eclipse/VSCode.</p>
+<h2 id="gradleintellij-build-system-integration">
+  Gradle/IntelliJ Build System Integration
+  <a class="heading-link" href="#gradleintellij-build-system-integration">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This is the core of the plugin. Previously, the plugin used a GhidraFacet to provide the features needed for Ghidra module/script development. However, this is not ideal as facets are rarely used elsewhere in IntelliJ and seem to be more of a <a href="https://platform.jetbrains.com/t/how-to-attach-a-facet-on-new-project-creation/3654/3"  class="external-link" target="_blank" rel="noopener">legacy/last-resort feature</a>. I thus decided to do away with facets and directly use Gradle/IntelliJ build systems to provide functional Intellisense (autocomplete, import resolution, etc.) for Ghidra module/script projects. The main hurdle here is that Modules and Scripts use different build systems: Ghidra Modules uses Gradle while Ghidra Scripts does not have any build system. Due to this difference, the 2 different project types have to be handled differently.</p>
+<h3 id="ghidra-script-projects">
+  Ghidra Script Projects
+  <a class="heading-link" href="#ghidra-script-projects">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Since Ghidra script projects are essentially just a directory of Java files that uses the Ghidra API, we can use IntelliJ’s native build system to provide Intellisense functionality. To do so, I collated all Ghidra Jar files into a single Library, which I then attached to the root module of the project.</p>
+<p><img src="ghidra-library.png" alt="Ghidra Library"></p>
+<p><img src="ghidra-intellij-project-structure.png" alt="Ghidra IntelliJ Project Structure"></p>
+<p>One issue that arose was in the case where a user wants to change the Ghidra installation that the project is using. In this case, my Ghidra Library has to be updated with the right libraries whenever a user makes a change to the Ghidra installation path via the GhidraSettings. As such, I had to add logic to perform this update in GhidraSettings.</p>
+<h3 id="ghidra-module-projects">
+  Ghidra Module Projects
+  <a class="heading-link" href="#ghidra-module-projects">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Initially, I thought this would be the easier one to implement, as Ghidra Modules uses the Gradle build system, and IntelliJ can easily load Gradle-based projects without any extra modifications. However, it turns out that the default <code>build.gradle</code> file for Ghidra Modules is only intended for building the sources within the Module itself. Java files within the <code>ghidra_scripts</code> directory are ignored, which makes sense from Ghidra’s point of view, since the scripts are meant to be dynamically loaded by Ghidra during runtime. However, this meant that the default <code>build.gradle</code> file does not recognise <code>ghidra_scripts</code> as a source path, causing Intellisense to be dysfunctional. This means that the user will not get Ghidra API auto-complete, and classes from the module source will not be imported properly.</p>
+<p><img src="intellisense-error.png" alt="Intellisense Error"></p>
+<p>Faced with this issue, I looked up how Eclipse’s GhidraDev makes the magic happen. From analyzing it, I learnt that GhidraDev uses Eclipse’s internal build system to augment Gradle. As such, I tried to mimic that by using IntelliJ’s build system on top of Gradle to provide the required functionality. However, this caused tons of integration issues, not the least that IntelliJ will treat Gradle as the source of truth, and reloading Gradle in a project will cause the additions I make using IntelliJ’s build system to be wiped. As such, I had no choice but to edit <code>build.gradle</code> itself. I initially did not want to go down this route as this will require users to manually edit their <code>build.gradle</code> when importing an existing project, thereby reducing usability of my plugin. I also noticed that the default <code>build.gradle</code> hints at editing it for use in IntelliJ from the following lines:</p>
+<pre tabindex="0"><code>// Exclude additional files from the built extension
+// Ex: buildExtension.exclude &#39;.idea/**&#39;
+</code></pre><p>I thus figured that this was the best way forward.</p>
+<p>Continuing from here, I modified <code>build.gradle</code> to use the <a href="https://docs.gradle.org/current/userguide/idea_plugin.html"  class="external-link" target="_blank" rel="noopener">IntelliJ IDEA Gradle plugin</a> to allow Intellisense to work properly. Using the IntelliJ IDEA Gradle plugin is ideal since it constrains my modifications to only work when using IntelliJ, and will not affect the project if it is opened in Eclipse or VSCode.</p>
+<h2 id="persistent-settings-storage">
+  Persistent Settings Storage
+  <a class="heading-link" href="#persistent-settings-storage">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>For the plugin to function, it has to be able to store Ghidra related settings persistently. Previously, this was done in the Ghidra Facet too. However, since I am doing away with the Facet, I decided to implement a project-level GhidraSettings instead to store the Ghidra related settings (This actually just consists of the Ghidra installation path). It also allows users to edit the settings and other components of my plugin to read these settings. Validation of settings was also added (E.g. To check if the given Ghidra path is valid). An added benefit was that the settings are grouped with settings from other tools, which makes it easier to find.</p>
+<p><img src="ghidra-settings.png" alt="Ghidra Settings"></p>
+<h3 id="dual-backend-design">
+  Dual-Backend Design
+  <a class="heading-link" href="#dual-backend-design">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The GhidraSetting itself has some nuance to it in order to cater to both Gradle and IntelliJ build systems. Gradle cannot read the internal state of GhidraSettings and thus, requires another way to specify the Ghidra installation path (Although GhidraSettings can read Gradle properties). To do so, I thought of GhidraSettings as having a “backend” to it. If the project is a Ghidra Module, any queries for settings are resolved by querying Gradle. If the project is a Ghidra Script, then the internal GhidraSettings state is used instead, as shown below in the figure.</p>
+<p><img src="ghidra-settings-internals.png" alt="Ghidra Settings Internals"></p>
+<p>By designing GhidraSettings this way, I am able to standardize the way objects can query/set Ghidra related settings (via GhidraSettings) and abstract away the logic needed to obtain these settings (via internal state or Gradle). One point to note was that I had to set the GhidraSettings configuration dialog to be read-only and mirror the settings in Gradle to make things neater.</p>
+<p><img src="ghidra-settings-disabled.png" alt="Ghidra Settings Disabled"></p>
+<p>To use Gradle for Ghidra project settings, I created a <code>gradle.properties</code> file. By specifying the <code>GHIDRA_INSTALL_DIR</code> property, I am able to use the properties file as a substitute to GhidraSettings.</p>
+<p><img src="gradle-properties.png" alt="Gradle Properties"></p>
+<h2 id="run-configuration">
+  Run Configuration
+  <a class="heading-link" href="#run-configuration">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Previously, run configurations were already supported to launch Ghidra from IntelliJ. However, it was unable to attach a module to Ghidra. As such, if you are developing a Ghidra module, you have to build it and install it into Ghidra to test it out, which is an EXTREMELY BIG pain. Considering that Vscode is able to attach the current project module to Ghidra during launch, I copied its logic over to IntelliJ. Turns out you just have to specify an additional JVM parameter <code>-Dghidra.external.modules=&lt;MODULE_PATH&gt;</code> to attach a Ghidra module to Ghidra during launch. I also modified the run configurations to obtain the Ghidra installation path from my GhidraSettings.</p>
+<p><img src="ghidra-run-configuration.png" alt="Ghidra Run Configuration"></p>
+<h2 id="new-project-wizard">
+  New Project Wizard
+  <a class="heading-link" href="#new-project-wizard">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This feature acts as a “frontend” for the plugin. Previously, the IntelliJ Ghidra plugin did not have a new project wizard for Ghidra projects. As such, if you want to create a new Ghidra module/script project, you have to either manually create the files and directories needed, or use Eclipse/VSCode to do it. I wanted to have functionality to create Ghidra module/script projects from IntelliJ itself, similar to what the GhidraDev Eclipse plugin has.</p>
+<p>My Ghidra New Project Wizard provides the options shown in the figure below to the user when creating a new project.</p>
+<p><img src="ghidra-new-project-wizard.png" alt="Ghidra New Project Wizard"></p>
+<p>These options are then used to create a new Ghidra module/script project. For example, Ghidra Path is passed on to GhidraSettings to store the path to Ghidra. The wizard will also construct the project skeleton.</p>
+<h1 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>With this, I was able to develop a newly improved Ghidra IntelliJ plugin. Here is the updated feature comparison between my updated plugin and Eclipse/VSCode support.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Improved IntelliJ Ghidra Plugin</th>
+          <th>Original IntelliJ Ghidra Plugin</th>
+          <th>Eclipse GhidraDev</th>
+          <th>VSCode Ghidra Module Project</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Supports Ghidra Script and Module Projects?</td>
+          <td>Both</td>
+          <td>Only scripts</td>
+          <td>Both</td>
+          <td>Only modules</td>
+      </tr>
+      <tr>
+          <td>Able to create new Ghidra projects from IDE?</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Able to load existing Ghidra projects?</td>
+          <td>Yes</td>
+          <td>Sort of</td>
+          <td>Yes</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Able to start Ghidra with the current Module without installation?</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Yes</td>
+      </tr>
+  </tbody>
+</table>
+<p>Initially, I thought that this would not take too long. However, it turns out that the devil is in the details and writing a good plugin takes some effort, especially when it comes to understanding the IntelliJ Plugin SDK (The documentation was very introductory and did not go into much depth…). It also didn’t help that I have no experience coding in Kotlin prior to this. Thankfully, I managed to get some help from the JetBrains forums and Claude. Good old grepping for keywords in the GitHub repository and staring at the code until they made sense was quite useful too.</p>
+<p>If you are interested in giving it a try, here’s the <a href="https://github.com/Uxinnn/intellij-ghidra"  class="external-link" target="_blank" rel="noopener">GitHub repository</a>. I will look into how I can publish it to the IntelliJ marketplace in the near future.</p>
+<h1 id="references">
+  References
+  <a class="heading-link" href="#references">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>New Project Wizard
+<ul>
+<li><a href="https://plugins.jetbrains.com/docs/intellij/new-project-wizard.html"  class="external-link" target="_blank" rel="noopener">https://plugins.jetbrains.com/docs/intellij/new-project-wizard.html</a></li>
+<li>MavenArchetypeNewProjectWizard</li>
+<li>IntelliJJavaNewProjectWizard</li>
+</ul>
+</li>
+<li>Run Configuration
+<ul>
+<li><a href="https://plugins.jetbrains.com/docs/intellij/run-configurations.html#configurationfactory"  class="external-link" target="_blank" rel="noopener">https://plugins.jetbrains.com/docs/intellij/run-configurations.html#configurationfactory</a></li>
+</ul>
+</li>
+<li>Settings
+<ul>
+<li><a href="https://plugins.jetbrains.com/docs/intellij/settings-tutorial.html"  class="external-link" target="_blank" rel="noopener">https://plugins.jetbrains.com/docs/intellij/settings-tutorial.html</a></li>
+</ul>
+</li>
+<li>Others
+<ul>
+<li><a href="https://plugins.jetbrains.com/docs/intellij/welcome.html"  class="external-link" target="_blank" rel="noopener">https://plugins.jetbrains.com/docs/intellij/welcome.html</a></li>
+<li><a href="https://plugins.jetbrains.com/docs/intellij/facet.html"  class="external-link" target="_blank" rel="noopener">https://plugins.jetbrains.com/docs/intellij/facet.html</a></li>
+<li><a href="https://github.com/JetBrains/intellij-community"  class="external-link" target="_blank" rel="noopener">https://github.com/JetBrains/intellij-community</a></li>
+<li><a href="https://github.com/JetBrains/intellij-sdk-code-samples"  class="external-link" target="_blank" rel="noopener">https://github.com/JetBrains/intellij-sdk-code-samples</a></li>
+<li><a href="https://platform.jetbrains.com/"  class="external-link" target="_blank" rel="noopener">https://platform.jetbrains.com/</a></li>
+<li><a href="https://github.com/nationalsecurityagency/ghidra"  class="external-link" target="_blank" rel="noopener">https://github.com/nationalsecurityagency/ghidra</a></li>
+<li><a href="https://github.com/R3TRO04/intellij-ghidra"  class="external-link" target="_blank" rel="noopener">https://github.com/R3TRO04/intellij-ghidra</a></li>
+<li><a href="https://github.com/garyttierney/intellij-ghidra"  class="external-link" target="_blank" rel="noopener">https://github.com/garyttierney/intellij-ghidra</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2026
+     Foong Xin Yu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="uxinnn.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
