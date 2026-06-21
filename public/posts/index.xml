@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Foong Xin Yu</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Apr 2026 16:12:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 16:57:21 +0800</lastBuildDate>
     <atom:link href="uxinnn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blackhat Asia 2026: Satellite Hacking</title>
+      <link>uxinnn.github.io/posts/bha-2026-satellite-hacking/</link>
+      <pubDate>Sun, 10 May 2026 16:57:21 +0800</pubDate>
+      <guid>uxinnn.github.io/posts/bha-2026-satellite-hacking/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;&#xD;&#xA;  Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;One day at work, I was scrolling through the list of BlackHat Asia 2026 Training Courses to see what&amp;rsquo;s available. This course on satellite hacking happened to catch my eye, given its exotic domain. For some reason, I was able to convince my company to sponsor me for the course, which is how I ended up attending my first BlackHat event.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ghidra x IntelliJ: A Plugin Glow-Up</title>
       <link>uxinnn.github.io/posts/ghidra-x-intellij-a-plugin-glowup/</link>

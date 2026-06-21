@@ -3,13 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>uxinnn.github.io/authors/</loc>
-    <lastmod>2026-04-27T16:12:42+08:00</lastmod>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/tags/blackhat-asia/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/posts/bha-2026-satellite-hacking/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
   </url><url>
     <loc>uxinnn.github.io/categories/</loc>
-    <lastmod>2026-04-27T16:12:42+08:00</lastmod>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
   </url><url>
     <loc>uxinnn.github.io/</loc>
-    <lastmod>2026-04-27T16:12:42+08:00</lastmod>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/categories/hardware/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/tags/hardware/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/posts/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/tags/satellite/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/tags/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/tags/training/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
+  </url><url>
+    <loc>uxinnn.github.io/authors/uxinnn/</loc>
+    <lastmod>2026-05-10T16:57:21+08:00</lastmod>
   </url><url>
     <loc>uxinnn.github.io/tags/ghidra/</loc>
     <lastmod>2026-04-27T16:12:42+08:00</lastmod>
@@ -20,19 +47,10 @@
     <loc>uxinnn.github.io/tags/intellij/</loc>
     <lastmod>2026-04-27T16:12:42+08:00</lastmod>
   </url><url>
-    <loc>uxinnn.github.io/posts/</loc>
-    <lastmod>2026-04-27T16:12:42+08:00</lastmod>
-  </url><url>
     <loc>uxinnn.github.io/categories/software-development/</loc>
     <lastmod>2026-04-27T16:12:42+08:00</lastmod>
   </url><url>
     <loc>uxinnn.github.io/tags/software-development/</loc>
-    <lastmod>2026-04-27T16:12:42+08:00</lastmod>
-  </url><url>
-    <loc>uxinnn.github.io/tags/</loc>
-    <lastmod>2026-04-27T16:12:42+08:00</lastmod>
-  </url><url>
-    <loc>uxinnn.github.io/authors/uxinnn/</loc>
     <lastmod>2026-04-27T16:12:42+08:00</lastmod>
   </url><url>
     <loc>uxinnn.github.io/posts/a-gentle-introduction-to-static-analysis-with-ghidra-pcode/</loc>
