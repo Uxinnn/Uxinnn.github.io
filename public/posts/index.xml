@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Foong Xin Yu</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 May 2026 16:57:21 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 22:34:48 +0800</lastBuildDate>
     <atom:link href="uxinnn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defcon Singapore 2026</title>
+      <link>uxinnn.github.io/posts/dcsg-2026/</link>
+      <pubDate>Mon, 18 May 2026 22:34:48 +0800</pubDate>
+      <guid>uxinnn.github.io/posts/dcsg-2026/</guid>
+      <description>&lt;p&gt;Managed to convince the company to sponsor me for yet another external event, and this time it&amp;rsquo;s the first ever Defcon held in Singapore!&lt;/p&gt;&#xA;&lt;p&gt;This was the first large scale cybersecurity community event that I went for and I can say that it did not disappoint.&lt;/p&gt;&#xA;&lt;p&gt;The talks were informative, and the various events and villages were really fun and educational (Definitely did not spend an hour trying to pick a lock at the Lock and Key Village for a sticker). I especially found the talk titled &amp;ldquo;Surveilling Politicians, Unmasking Influencers, Fake Likes and Dying Together&amp;rdquo; by Dries Depoorter to be especially memorable. It wasn&amp;rsquo;t a particularly technical talk, but the creativity he shown through his work was something that I thought was particularly hilarious and admirable. This is even more so nowadays where we tend to outsource our thinking to LLMs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Blackhat Asia 2026: Satellite Hacking</title>
       <link>uxinnn.github.io/posts/bha-2026-satellite-hacking/</link>

@@ -6,7 +6,6 @@ description = "A summary and some thoughts on a BlackHat Asia training course on
 authors = ["Uxinnn"]
 tags = ["hardware", "satellite", "training", "blackhat asia"]
 categories = ["hardware"]
-series = []
 featuredImage = "images/bha-2026-satellite-hacking.png"
 +++
 
